@@ -31,11 +31,11 @@ $ ./todo report           # Statistics`);
 
 // 2. List all pending todos
 if(command=='ls'){
-    fs.readFile('Input.txt', (err, data) => { 
-    if (err) throw err; 
+    fs.readFile('todo.txt', (err, data) => { 
+        if (err) throw err; 
 
-    console.log(data.toString()); 
-}) 
+        console.log(data.toString()); 
+    }); 
 }
 
 
